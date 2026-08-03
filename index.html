@@ -3,42 +3,270 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HandicapLab</title>
-<style>
-:root{--base:#07090A;--surf:#101416;--ink:#F3F6F5;--ink2:#9BA6A8;--acc:#4FCB6A;--line:#232B2E}
-@media (prefers-color-scheme:light){:root{--base:#EFF2F1;--surf:#FFFFFF;--ink:#0A0F10;--ink2:#57625F;--acc:#1F7A3D;--line:#DFE4E3}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--base);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;padding:2.5rem 1.25rem}
-main{max-width:44rem;margin:0 auto}
-h1{font-size:2rem;letter-spacing:-.02em;margin:0 0 .5rem}
-h2{font-size:1.15rem;margin:2.5rem 0 .75rem}
-p,li{color:var(--ink2)}
-a{color:var(--acc)}
-.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:1.25rem 1.5rem;margin:1.5rem 0}
-.lead{color:var(--ink);font-size:1.1rem}
-footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);font-size:.9rem}
-</style>
+<title>HandicapLab — Golf-Handicap im Überblick</title>
+<meta name="description" content="HandicapLab liest dein DGV Handicap History Sheet aus und rechnet daraus deine Statistik: Handicap-Index, Verlaufskurve, Score-Trends und Rundenbuch. Vollständig offline auf iPhone und iPad.">
+<link rel="canonical" href="https://handicaplab.app/">
+<link rel="icon" href="assets/img/icon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HandicapLab">
+<meta property="og:title" content="HandicapLab — Golf-Handicap im Überblick">
+<meta property="og:description" content="Dein DGV Handicap History Sheet, offline ausgewertet auf iPhone und iPad.">
+<meta property="og:url" content="https://handicaplab.app/">
+<meta property="og:image" content="https://handicaplab.app/assets/img/ipad-uebersicht.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/hl.css">
 </head>
 <body>
-<main>
-  <h1>HandicapLab</h1>
-  <p class="lead">Golf-Handicap im Überblick — dein DGV Handicap History Sheet, offline ausgewertet.</p>
 
-  <div class="card">
-    <p>HandicapLab liest das Handicap History Sheet aus dem DGV-Serviceportal ein und macht daraus
-    eine übersichtliche Statistik: Handicap-Index, Verlaufskurve, Score-Trends und Rundenbuch.
-    Die Auswertung passiert vollständig auf deinem iPhone oder iPad — ohne Konto und ohne
-    Internetverbindung.</p>
+<header class="nav">
+  <div class="shell">
+    <a class="brand" href="./"><img src="assets/img/icon-512.png" alt="" width="28" height="28">HandicapLab</a>
+    <nav class="nav-links" aria-label="Seitenbereiche">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#premium">Premium</a>
+      <a href="#datenschutz" data-secondary>Datenschutz</a>
+      <a href="./support.html">Support</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Seiten</h2>
-  <ul>
-    <li><a href="./support.html">Support &amp; Kontakt</a></li>
-    <li><a href="./datenschutz.html">Datenschutzerklärung</a></li>
-    <li><a href="./impressum.html">Impressum</a></li>
-  </ul>
+<main>
 
-  <footer><a href="./impressum.html">Impressum</a> · © 2026 Manuel Henke</footer>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="shell">
+      <div class="hero-copy rv">
+        <h1>Zehn Jahre Golf,<br>in <span>einer Kurve</span>.</h1>
+        <p class="lede">HandicapLab liest dein DGV Handicap History Sheet aus und rechnet
+          daraus deine Statistik. Vollständig auf dem Gerät.</p>
+        <div class="hero-actions">
+          <span class="status">
+            <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Bald im App&nbsp;Store
+          </span>
+          <a class="btn btn-ghost" href="./support.html">So kommst du an dein Sheet</a>
+        </div>
+      </div>
+      <div class="hero-art rv" style="--i:1">
+        <div class="device">
+          <img src="assets/img/iphone-uebersicht.png" width="660" height="1235"
+               alt="Übersicht in HandicapLab: Handicap-Index 10,0 mit Verlaufskurve, vier Statistik-Kacheln und das Score-Trend-Diagramm.">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Import ───────────────────────────────────────────────────────── -->
+  <section id="import">
+    <div class="shell">
+      <div class="rv">
+        <h2>Vom PDF zur Statistik</h2>
+        <p class="lede">Das Sheet holst du dir einmal aus dem Serviceportal. Danach genügt
+          ein Tippen auf „PDF importieren“.</p>
+      </div>
+      <div class="steps">
+        <div class="step rv"><span class="n">01</span>
+          <h3>Sheet aufrufen</h3>
+          <p>Auf golf.de unter „Mein Bereich“ anmelden und das Handicap History Sheet öffnen.</p>
+        </div>
+        <div class="step rv" style="--i:1"><span class="n">02</span>
+          <h3>PDF erzeugen</h3>
+          <p>Unterhalb der Tabelle sitzt der Druck-Button. Das PDF enthält alle Runden seit
+            Vereinseintritt, nicht nur die zehn auf dem Bildschirm.</p>
+        </div>
+        <div class="step rv" style="--i:2"><span class="n">03</span>
+          <h3>In HandicapLab öffnen</h3>
+          <p>Über „PDF importieren“ oder das Teilen-Menü. Der Import dauert wenige Sekunden.</p>
+        </div>
+      </div>
+      <p class="tiny rv" style="margin-top:2rem"><a href="./support.html">Ausführliche Anleitung
+        und ein anonymisiertes Beispiel-Sheet zum Ausprobieren</a></p>
+    </div>
+  </section>
+
+  <!-- ── Funktionen (kostenlos) ───────────────────────────────────────── -->
+  <section id="funktionen">
+    <div class="shell">
+      <div class="rv">
+        <span class="eyebrow">Ohne Kauf</span>
+        <h2>Was die App von Anfang an zeigt</h2>
+      </div>
+      <div class="bento">
+
+        <article class="cell cell-lead rv">
+          <div>
+            <h3>Handicap-Index mit Verlauf</h3>
+            <p>Der aktuelle Index als Leitwert, daneben die Kurve der letzten zwölf Monate
+              und der Bestwert der gesamten Historie.</p>
+          </div>
+          <figure><img src="assets/img/crop-hcpi.png" width="900" height="410"
+            alt="Leitwert-Karte mit Handicap-Index 10,0 und Sparkline über zwölf Monate."></figure>
+        </article>
+
+        <article class="cell cell-b rv" style="--i:1">
+          <div>
+            <h3>Vier Kennzahlen</h3>
+            <p>Durchschnitt über 18 und 9 Loch, bester und schlechtester Wert, jeweils mit
+              Datum und Platz.</p>
+          </div>
+          <figure><img src="assets/img/crop-kacheln.png" width="900" height="526"
+            alt="Vier Statistik-Kacheln: Ø Score 18, bester 18, Ø Score 9 und schlechtester Wert."></figure>
+        </article>
+
+        <article class="cell cell-c rv" style="--i:2">
+          <div>
+            <h3>Score-Trend</h3>
+            <p>Umschaltbar zwischen 18 Loch, 9 Loch und Liga.</p>
+          </div>
+          <figure><img src="assets/img/crop-trend.png" width="900" height="565"
+            alt="Score-Trend-Diagramm mit Umschalter für 18 Loch, 9 Loch und Liga."></figure>
+        </article>
+
+        <article class="cell cell-d rv" style="--i:3">
+          <span class="big mono">2021</span>
+          <div>
+            <h3>Auch die Jahre vor dem World Handicap System</h3>
+            <p>Bis zur WHS-Umstellung führte das History Sheet Stableford-Nettopunkte statt
+              Bruttoscores. HandicapLab erkennt diese Runden und zeigt sie an, statt die
+              Historie dort abzuschneiden. Aus den Score-Durchschnitten bleiben sie heraus,
+              damit die Werte vergleichbar bleiben.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Premium ──────────────────────────────────────────────────────── -->
+  <section id="premium">
+    <div class="shell">
+      <div class="rv">
+        <span class="eyebrow">Einmaliger Kauf</span>
+        <h2>Premium schaltet die Detailtiefe frei</h2>
+        <p class="lede">Kein Abo. Der Kauf hängt an deiner Apple-ID und lässt sich auf einem
+          neuen Gerät wiederherstellen.</p>
+      </div>
+      <div class="plans">
+
+        <div class="plan rv">
+          <div class="plan-head">
+            <h3>Kostenlos</h3>
+            <span class="plan-price">0 €</span>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Handicap-Index mit Verlaufskurve</b>Leitwert, Trend und Bestwert</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Vier Statistik-Kacheln</b>18 und 9 Loch, Bestwert und schlechtester Wert</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Score-Trend</b>18 Loch, 9 Loch und Liga</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Vollständige Historie</b>Inklusive der Runden vor 2021</span></li>
+          </ul>
+        </div>
+
+        <div class="plan plan-premium rv" style="--i:1">
+          <div class="plan-head">
+            <h3>Premium</h3>
+            <span class="plan-price">5,99 €</span>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Detail-Analyse</b>Heim gegen Auswärts, privat gegen Turnier, Saisonverlauf, Plätze, Wochentage</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Liga-Statistiken</b>Mannschaftsrunden inklusive Team-Auswertung</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Rundenbuch</b>Alle Einzelrunden mit CR, Slope und Index, durchsuchbar</span></li>
+            <li><svg viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg><span><b>Alles aus der kostenlosen Version</b>Bleibt unverändert enthalten</span></li>
+          </ul>
+          <p class="plan-note">Preis für Deutschland, Stand August 2026. Wiederherstellen über
+            „Käufe wiederherstellen“ in den Einstellungen der App.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── iPad ─────────────────────────────────────────────────────────── -->
+  <section id="ipad">
+    <div class="shell">
+      <div class="wide-head rv">
+        <h2>Auf dem iPad mit Seitenleiste</h2>
+        <p class="lede">Dieselbe Auswertung, nur breiter: Navigation links, Kennzahlen und
+          Diagramm nebeneinander.</p>
+      </div>
+      <div class="wide-art rv" style="--i:1">
+        <div class="device device-wide">
+          <img src="assets/img/ipad-uebersicht.png" width="1440" height="846"
+               alt="HandicapLab auf dem iPad: Seitenleiste mit Profil und Navigation, rechts Handicap-Index, Statistik-Kacheln und Score-Trend nebeneinander.">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Datenschutz ──────────────────────────────────────────────────── -->
+  <section id="datenschutz">
+    <div class="shell">
+      <div class="rv" style="max-width:44rem">
+        <h2>Die App sendet nichts.</h2>
+        <p class="lede">Kein Konto, kein Tracking, keine Analytics, keine Werbung. Das PDF wird
+          auf dem Gerät gelesen, und die Auswertung bleibt dort.</p>
+      </div>
+      <div class="facts">
+        <div class="fact rv"><b>Kein Konto</b><span>Keine Registrierung, kein Login, keine Mailadresse.</span></div>
+        <div class="fact rv" style="--i:1"><b>Kein Server</b><span>Die App baut keine Verbindung auf, um deine Daten zu übertragen.</span></div>
+        <div class="fact rv" style="--i:2"><b>Kein Tracking</b><span>Keine Analyse-Werkzeuge, keine Werbe-IDs, keine Drittanbieter-SDKs.</span></div>
+        <div class="fact rv" style="--i:3"><b>Selbst löschbar</b><span>Neues Sheet importieren ersetzt die Daten, App löschen entfernt sie.</span></div>
+      </div>
+      <p class="tiny rv" style="margin-top:2rem"><a href="./datenschutz.html">Vollständige
+        Datenschutzerklärung</a></p>
+    </div>
+  </section>
+
+  <!-- ── Abschluss ────────────────────────────────────────────────────── -->
+  <section class="close">
+    <div class="shell">
+      <div class="rv">
+        <h2>HandicapLab erscheint für iPhone und iPad.</h2>
+        <p class="lede">Ab iOS 18. Bis zur Freigabe im App Store erreichst du mich per Mail.</p>
+        <div class="hero-actions">
+          <span class="status">
+            <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            Bald im App&nbsp;Store
+          </span>
+          <a class="btn btn-ghost" href="mailto:admin@handicaplab.app?subject=HandicapLab">admin@handicaplab.app</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-links">
+      <a href="./support.html">Support</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+      <a href="./impressum.html">Impressum</a>
+    </div>
+    <small>© 2026 Manuel Henke</small>
+  </div>
+</footer>
+
+<script>
+// Einblenden beim Scrollen: markiert Abschnitte, sobald sie ins Bild kommen.
+// Zweck ist Hierarchie beim Lesen, nicht Dekoration — deshalb einmalig und
+// bei prefers-reduced-motion komplett aus (CSS zeigt dann alles sofort).
+(function () {
+  var items = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  items.forEach(function (el) { io.observe(el); });
+})();
+</script>
+
 </body>
 </html>
