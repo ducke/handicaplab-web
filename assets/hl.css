@@ -308,3 +308,7 @@ section + section { border-top: 1px solid var(--line); }
   .btn { transition: none; }
   .btn:active { transform: none; }
 }
+
+/* Screenshots in der Support-Anleitung */
+.prose figure.shot { margin: 1.25rem 0 1.75rem; }
+.prose figure.shot img { display: block; width: 100%; max-width: 24rem; height: auto; border-radius: 12px; box-shadow: var(--hair); }
