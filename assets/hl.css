@@ -105,6 +105,10 @@ a:hover { color: var(--ink); }
 
 @media (max-width: 560px) {
   .nav-links a[data-secondary] { display: none; }
+  /* Auf schmalen Screens quetscht space-between die Brand in die Links:
+     der Name fliegt raus, das Icon bleibt als Marke. */
+  .brand { flex-shrink: 0; }
+  .brand span { display: none; }
 }
 
 /* ---------- Bausteine ----------------------------------------------------- */
