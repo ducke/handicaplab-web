@@ -181,6 +181,8 @@ section + section { border-top: 1px solid var(--line); }
 .hero-copy { max-width: 37rem; }
 .hero h1 span { color: var(--acc-text); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 2.25rem; }
+.store-badge img { display: block; height: 54px; width: auto; }
+.store-badge:hover { opacity: .85; }
 .hero-art { justify-self: end; width: 100%; max-width: 310px; }
 
 @media (max-width: 900px) {
